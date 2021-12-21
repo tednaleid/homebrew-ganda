@@ -2,16 +2,16 @@
 class Ganda < Formula
   desc "fast cmd-line app that quickly request millions of urls and save/echo the results"
   homepage "https://github.com/tednaleid/ganda"
-  version "0.1.8"
+  version "0.1.9"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/tednaleid/ganda/releases/download/v0.1.8/ganda_0.1.8_darwin_amd64.tar.gz"
-    sha256 "424323d0b53107256b91a9623cb6b0cd0e000f544b091cfcb3925f34231f5054"
+    url "https://github.com/tednaleid/ganda/releases/download/v0.1.9/ganda_0.1.9_darwin_amd64.tar.gz"
+    sha256 "bfdf60911f4dd8541e3fe8e08eca9d6fcadadfe55693afe0ca9fe283d314ae9b"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/tednaleid/ganda/releases/download/v0.1.8/ganda_0.1.8_linux_amd64.tar.gz"
-      sha256 "b5239f104a0900d12fb3de877022cf6f1543eeba24711424506d93bbdf20c7e3"
+      url "https://github.com/tednaleid/ganda/releases/download/v0.1.9/ganda_0.1.9_linux_amd64.tar.gz"
+      sha256 "57a86b05a90a59667da2e495de63049193f0a1eee24d33f20ce23a80be5b7a53"
     end
   end
 
