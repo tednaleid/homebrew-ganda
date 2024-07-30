@@ -5,20 +5,20 @@
 class Ganda < Formula
   desc "fast cmd-line app that quickly request millions of urls and save/echo the results"
   homepage "https://github.com/tednaleid/ganda"
-  version "1.0.2"
+  version "1.0.3"
 
   on_macos do
     on_intel do
-      url "https://github.com/tednaleid/ganda/releases/download/v1.0.2/ganda_Darwin_x86_64.tar.gz"
-      sha256 "862424bace98fe71ff0af8e303ce45d45b84a8201dc7e72a96b6782ec77ef9a2"
+      url "https://github.com/tednaleid/ganda/releases/download/v1.0.3/ganda_Darwin_x86_64.tar.gz"
+      sha256 "cad8d4e7e995643a0854c17a763e1812c2a3a577e212a2619bff0f177218a7b9"
 
       def install
         bin.install "ganda"
       end
     end
     on_arm do
-      url "https://github.com/tednaleid/ganda/releases/download/v1.0.2/ganda_Darwin_arm64.tar.gz"
-      sha256 "776a0e1fb5934b7929e8bb008ff0a87ad13ac7429d70aa4793a292568fb65a3a"
+      url "https://github.com/tednaleid/ganda/releases/download/v1.0.3/ganda_Darwin_arm64.tar.gz"
+      sha256 "b9a3b12e119342d608bf774faed3e9269b8da4505fa9a5c074c76e96d280debc"
 
       def install
         bin.install "ganda"
@@ -29,8 +29,8 @@ class Ganda < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/tednaleid/ganda/releases/download/v1.0.2/ganda_Linux_x86_64.tar.gz"
-        sha256 "37bcf659ecf2a48540a928842c1b4fd80e5709105741b36c9b0009fb53d5c489"
+        url "https://github.com/tednaleid/ganda/releases/download/v1.0.3/ganda_Linux_x86_64.tar.gz"
+        sha256 "546c8932d2c0f4cc4a723f299e7e2a1e0c441c35af5eaefc487e28671404b928"
 
         def install
           bin.install "ganda"
@@ -39,8 +39,8 @@ class Ganda < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/tednaleid/ganda/releases/download/v1.0.2/ganda_Linux_arm64.tar.gz"
-        sha256 "7e7338f8cd332e55f9279f05622d77a8ed3d63a6baf678787df43ee135a21bcd"
+        url "https://github.com/tednaleid/ganda/releases/download/v1.0.3/ganda_Linux_arm64.tar.gz"
+        sha256 "2a16768e7972bc16735c51e0e88e4c3881c5e187299a1a4068f4a72152cf2f84"
 
         def install
           bin.install "ganda"
