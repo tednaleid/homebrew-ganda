@@ -5,20 +5,20 @@
 class Ganda < Formula
   desc "fast cmd-line app that quickly request millions of urls and save/echo the results"
   homepage "https://github.com/tednaleid/ganda"
-  version "1.1.0"
+  version "1.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tednaleid/ganda/releases/download/v1.1.0/ganda_Darwin_x86_64.tar.gz"
-      sha256 "9df43990529d9d0f2275bd39531fa95c7dc80262089dac35173d566016228d8b"
+      url "https://github.com/tednaleid/ganda/releases/download/v1.1.1/ganda_Darwin_x86_64.tar.gz"
+      sha256 "8453469fae966cb033946edfddae6ad8e4334f2369cea8595a0bc2777b43ae9e"
 
       define_method(:install) do
         bin.install "ganda"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tednaleid/ganda/releases/download/v1.1.0/ganda_Darwin_arm64.tar.gz"
-      sha256 "02d0016cbb4fb48099cb6b82f7a0fbe33716f2933ba8b318ddb328b5aca8724c"
+      url "https://github.com/tednaleid/ganda/releases/download/v1.1.1/ganda_Darwin_arm64.tar.gz"
+      sha256 "407b9b961fc22949dbf0b3ad29ad01095d8ae8d4a064c1005d8c813db62e72d1"
 
       define_method(:install) do
         bin.install "ganda"
@@ -28,15 +28,15 @@ class Ganda < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tednaleid/ganda/releases/download/v1.1.0/ganda_Linux_x86_64.tar.gz"
-      sha256 "2412774fff235840ee02a8acb842cd96b427cd8dc64ba725496348c2831fcdb0"
+      url "https://github.com/tednaleid/ganda/releases/download/v1.1.1/ganda_Linux_x86_64.tar.gz"
+      sha256 "397f0c9501bb69a1a8b68c92e13e3d23730d3ce0a5eada9f3fbf210cc73186ea"
       define_method(:install) do
         bin.install "ganda"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tednaleid/ganda/releases/download/v1.1.0/ganda_Linux_arm64.tar.gz"
-      sha256 "15f1367f3f2e45de98a38382968cb943c8ffab9995a1132d441af1836db9b7f9"
+      url "https://github.com/tednaleid/ganda/releases/download/v1.1.1/ganda_Linux_arm64.tar.gz"
+      sha256 "711a873ba7f74862f9dc13b927cf38358ff3060b988360a78ac2223ef1e6415b"
       define_method(:install) do
         bin.install "ganda"
       end
